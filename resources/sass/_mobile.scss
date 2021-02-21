@@ -1,0 +1,113 @@
+@media screen and (max-width: 760px) {
+    // typography
+
+h1{
+    font-size: 1rem;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+h5,
+h6{
+    font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+label,
+blockquote,
+span{
+    font-size: 0.875rem;
+}
+.addCategory {
+    min-width: 10em;
+}
+    .app {
+        display: block;
+        .sidebarActive {
+            width: 100% !important;
+            opacity: 0.97;
+        }
+        .navbar {
+            position: absolute;
+            width: 0;
+            border-right: 0;
+            padding-top: 4em;
+            background-color: $primary;
+            transition: all 0.4s ease-in;
+            z-index: 1000;
+        }
+        .rightPanel {
+            width: 100%;
+            .addUrl {
+                .collection-container {
+                    label {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .all-content {
+                .search {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .cards {
+                    grid-template-columns: auto;
+                }
+                .emptyPage {
+                    width: 100%;
+                }
+            }
+            .topnav {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .fa-bars {
+                    display: block;
+                }
+            }
+        }
+        form {
+            position: relative;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            .field {
+                width: 100%;
+                margin: 0.5em 0;
+                .input {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0.5em 0;
+                }
+                &:last-child {
+                    position: absolute;
+                    bottom: 1em;
+                    right: -20%;
+                }
+            }
+        }
+        // Category form
+        .form-category {
+            .field {
+                &:last-child {
+                    right: -50%;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

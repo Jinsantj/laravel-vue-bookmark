@@ -1,0 +1,21 @@
+
+.btn {
+    outline: none;
+    border: 0;
+}
+
+.button{
+    font-size: 1.3rem;
+    padding: 0.5em;
+    outline: none;
+    border: 0;
+    background: none;
+    color: $white;
+}
+
+.btn-login {
+    color: $white;
+    background: darken($color: $secondary, $amount: 20%);
+    padding: 1em 0.5em;
+    border-radius: 5px;
+}
